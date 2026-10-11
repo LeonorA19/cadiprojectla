@@ -1,0 +1,10 @@
+SITE WORK 1 - como usar
+
+1. Abre cada ficheiro .html num editor de texto (ex.: VS Code, Bloco de Notas) e substitui tudo o que estiver entre [parênteses retos].
+2. Coloca os ficheiros na pasta certa:
+   - audio/peca1.mp3 (a peça, em MP3)
+   - audio/exp1.mp3, exp2.mp3 (experiências; acrescenta ou apaga blocos conforme precisares)
+   - img/exp1.jpg, exp2.jpg (imagens a 72 dpi, comprimidas)
+3. Testa: abre index.html no browser e confirma que o áudio toca e as imagens aparecem.
+4. Publicar: arrasta a pasta inteira para https://app.netlify.com/drop e copia o link gerado.
+5. Na análise, para saltar para um instante, escreve os time codes no formato mm:ss.
