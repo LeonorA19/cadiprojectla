@@ -1,10 +1,26 @@
-SITE WORK 1 - como usar
+SITE CADI - instrucoes
 
-1. Abre cada ficheiro .html num editor de texto (ex.: VS Code, Bloco de Notas) e substitui tudo o que estiver entre [parênteses retos].
-2. Coloca os ficheiros na pasta certa:
-   - audio/peca1.mp3 (a peça, em MP3)
-   - audio/exp1.mp3, exp2.mp3 (experiências; acrescenta ou apaga blocos conforme precisares)
-   - img/exp1.jpg, exp2.jpg (imagens a 72 dpi, comprimidas)
-3. Testa: abre index.html no browser e confirma que o áudio toca e as imagens aparecem.
-4. Publicar: arrasta a pasta inteira para https://app.netlify.com/drop e copia o link gerado.
-5. Na análise, para saltar para um instante, escreve os time codes no formato mm:ss.
+Estrutura principal
+- index.html: Home
+- work1.html: Work 01 - Sound Composition
+- work2.html: Work 02 - Audiovisual Instrument
+- abordagem.html: Process
+- pesquisa.html: Research
+- style.css: estilos partilhados
+- script.js: controlos opcionais para navegar pelos time codes do Work 01
+
+Recursos multimédia
+Os ficheiros de audio e imagem ainda nao estao incluidos nesta pasta. Quando estiverem disponiveis, coloca-os nos caminhos indicados:
+- audio/peca1.mp3
+- audio/exp1.mp3 e audio/exp2.mp3
+- img/exp1.jpg e img/exp2.jpg
+
+Para ligar a peca principal, acrescenta src="audio/peca1.mp3" ao elemento audio com id="work1-audio" em work1.html e ao leitor da Work 01 em index.html. Os time codes tornam-se interativos quando o leitor de work1.html tem um src.
+
+Os marcadores no site identificam os locais e conteudos a preencher. Substitui-os apenas com informacao verificada; nao publiques marcadores que nao queiras mostrar.
+
+Pre-visualizacao
+Abre index.html num browser. Para testar os time codes do Work 01, adiciona o audio em audio/peca1.mp3 e substitui os marcadores de tempo no formato mm:ss. Os controlos dos time codes sao ativados por script.js; o conteudo e as ligacoes continuam disponiveis sem JavaScript.
+
+Publicacao no GitHub Pages
+Envia o conteudo desta pasta para a raiz do repositorio, mantendo index.html, as restantes paginas, style.css, script.js e as pastas de recursos ao mesmo nivel. Em Settings > Pages, seleciona a branch de publicacao e a pasta raiz (/(root)).
