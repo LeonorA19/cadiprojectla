@@ -433,6 +433,14 @@ code {
   max-width: 76ch;
 }
 
+#analysis .analysis-section {
+  max-width: none;
+}
+
+#analysis .analysis-section p {
+  max-width: none;
+}
+
 .analysis-section {
   margin-top: 2.5rem;
 }
