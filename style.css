@@ -304,6 +304,10 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.work1-title {
+  max-width: none;
+}
+
 .project-summary,
 .section-intro {
   margin-bottom: 0;
