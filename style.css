@@ -193,9 +193,7 @@ h3 {
 .home-intro {
   display: grid;
   max-width: none;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
-  column-gap: clamp(2rem, 7vw, 7rem);
-  align-items: end;
+  grid-template-columns: 1fr;
   padding: 0 0 clamp(2.5rem, 5vw, 4.5rem);
 }
 
@@ -205,18 +203,13 @@ h3 {
 
 .home-intro h1 {
   grid-column: 1;
-  grid-row: 2 / span 2;
-  align-self: center;
   max-width: none;
-  margin-bottom: 0;
+  margin-bottom: 0.9rem;
   font-size: clamp(2.35rem, 3.8vw, 3.35rem);
 }
 
 .intro-copy {
-  grid-column: 2;
-  grid-row: 2;
-  align-self: center;
-  max-width: 48ch;
+  grid-column: 1;
   margin-bottom: 0;
   color: var(--muted);
   font-family: var(--display);
@@ -313,12 +306,15 @@ h3 {
 
 .project-summary,
 .section-intro {
-  max-width: 60ch;
   margin-bottom: 0;
   color: var(--muted);
   font-family: var(--display);
   font-size: clamp(1.15rem, 2vw, 1.45rem);
   line-height: 1.5;
+}
+
+.section-intro {
+  max-width: 60ch;
 }
 
 .contents {
