@@ -57,7 +57,8 @@ a:hover {
 
 a:focus-visible,
 audio:focus-visible,
-time[role="button"]:focus-visible {
+time[role="button"]:focus-visible,
+.timestamp-seek:focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 4px;
 }
@@ -484,8 +485,15 @@ code {
 
 .timeline time[role="button"] {
   cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
+}
+
+.timestamp-seek {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
 }
 
 .timeline p {
